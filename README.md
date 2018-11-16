@@ -2,7 +2,7 @@
 
 [![Platforms](https://img.shields.io/badge/platform-iOS-yellowgreen.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
-[![Coverage](https://img.shields.io/badge/coverage-0.0%25-red.svg)]()
+[![Coverage](https://img.shields.io/badge/coverage-34.00%25-orange.svg)]()
 [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]()
 [![CocoaPod](https://img.shields.io/badge/pod-1.0.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
@@ -19,7 +19,7 @@
 `device-kit` is availabe via `CocoaPods`
 
 ```
-pod 'device-kit', '~> 1.0.0' 
+pod 'device-kit', '~> 1.0.1' 
 ```
 ## Manual
 You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
