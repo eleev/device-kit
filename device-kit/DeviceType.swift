@@ -87,6 +87,7 @@ extension DeviceType {
 
 extension DeviceType {
     
+    /// Identifiers that specify the exact devices' types
     internal var identifiers: [String] {
         
         switch self {
