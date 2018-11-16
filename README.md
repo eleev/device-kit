@@ -1,6 +1,6 @@
 # device-kit [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-[![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-yellow.svg)]()
+[![Platforms](https://img.shields.io/badge/platform-iOS-yellowgreen.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![Coverage](https://img.shields.io/badge/coverage-0.0%25-red.svg)]()
 [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]()
