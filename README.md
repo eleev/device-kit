@@ -59,6 +59,11 @@ UIDevice.current.storageStatus.getFreeSpace(.useGB, includeUnitPostfix: false)
 // If you don't want to get GB, MB postfixes then specify an optional parameter for `includeUnitPostfix`:
 // 139.16
 ```
+# 📝 ToDo
+- [ ] Lightweight `Network` reachability (with `NotificationCenter` support or more safer approach in observing changes)
+- [ ] Interface `orientation` observer 
+- [ ] Device `orientation` observer
+
 
 # 🙋‍♀️🙋‍♂️Contributing 
 - There is just one main rule for contributors - **please include your extensions in separete files**. It's important since such extension can be more easily referenced and reused.
