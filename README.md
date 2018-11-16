@@ -12,7 +12,7 @@
 ![](logo-device_kit.png)
 
 # ✍️ About
-📱Framework that allows to get extended information about an iOS device.
+📱Lightweight framework that allows to get extended information about an `iOS` device.
 
 # 🏗 Installation
 ## CocoaPods
