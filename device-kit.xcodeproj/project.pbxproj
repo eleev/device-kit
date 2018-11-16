@@ -11,6 +11,9 @@
 		A96E1172219EB47A00F36250 /* device_kitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E1171219EB47A00F36250 /* device_kitTests.swift */; };
 		A96E1174219EB47A00F36250 /* device_kit.h in Headers */ = {isa = PBXBuildFile; fileRef = A96E1166219EB47A00F36250 /* device_kit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A96E117E219EB4DF00F36250 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A96E117D219EB4DF00F36250 /* .gitignore */; };
+		A96E1180219EB51000F36250 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E117F219EB51000F36250 /* DeviceType.swift */; };
+		A96E1182219EB53E00F36250 /* UIDevice+Extended.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E1181219EB53E00F36250 /* UIDevice+Extended.swift */; };
+		A96E1184219EB9D900F36250 /* StorageStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E1183219EB9D900F36250 /* StorageStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,9 @@
 		A96E1171219EB47A00F36250 /* device_kitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = device_kitTests.swift; sourceTree = "<group>"; };
 		A96E1173219EB47A00F36250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A96E117D219EB4DF00F36250 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A96E117F219EB51000F36250 /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		A96E1181219EB53E00F36250 /* UIDevice+Extended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extended.swift"; sourceTree = "<group>"; };
+		A96E1183219EB9D900F36250 /* StorageStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,9 @@
 			children = (
 				A96E1166219EB47A00F36250 /* device_kit.h */,
 				A96E1167219EB47A00F36250 /* Info.plist */,
+				A96E117F219EB51000F36250 /* DeviceType.swift */,
+				A96E1183219EB9D900F36250 /* StorageStatus.swift */,
+				A96E1181219EB53E00F36250 /* UIDevice+Extended.swift */,
 			);
 			path = "device-kit";
 			sourceTree = "<group>";
@@ -151,6 +160,7 @@
 				TargetAttributes = {
 					A96E1162219EB47A00F36250 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					A96E116B219EB47A00F36250 = {
 						CreatedOnToolsVersion = 10.1;
@@ -198,6 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96E1184219EB9D900F36250 /* StorageStatus.swift in Sources */,
+				A96E1180219EB51000F36250 /* DeviceType.swift in Sources */,
+				A96E1182219EB53E00F36250 /* UIDevice+Extended.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +358,7 @@
 		A96E1178219EB47A00F36250 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -361,6 +375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "eleev.astemir.device-kit";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -369,6 +384,7 @@
 		A96E1179219EB47A00F36250 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -393,6 +409,7 @@
 		A96E117B219EB47A00F36250 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "device-kitTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -410,6 +427,7 @@
 		A96E117C219EB47A00F36250 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "device-kitTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
