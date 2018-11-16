@@ -10,6 +10,7 @@
 		A96E116D219EB47A00F36250 /* device_kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A96E1163219EB47A00F36250 /* device_kit.framework */; };
 		A96E1172219EB47A00F36250 /* device_kitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E1171219EB47A00F36250 /* device_kitTests.swift */; };
 		A96E1174219EB47A00F36250 /* device_kit.h in Headers */ = {isa = PBXBuildFile; fileRef = A96E1166219EB47A00F36250 /* device_kit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A96E117E219EB4DF00F36250 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A96E117D219EB4DF00F36250 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		A96E116C219EB47A00F36250 /* device-kitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "device-kitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A96E1171219EB47A00F36250 /* device_kitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = device_kitTests.swift; sourceTree = "<group>"; };
 		A96E1173219EB47A00F36250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A96E117D219EB4DF00F36250 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		A96E1159219EB47A00F36250 = {
 			isa = PBXGroup;
 			children = (
+				A96E117D219EB4DF00F36250 /* .gitignore */,
 				A96E1165219EB47A00F36250 /* device-kit */,
 				A96E1170219EB47A00F36250 /* device-kitTests */,
 				A96E1164219EB47A00F36250 /* Products */,
@@ -177,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96E117E219EB4DF00F36250 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
