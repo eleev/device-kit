@@ -44,15 +44,15 @@ public struct StorageStatus {
     
     // MARK: - Methods
     
-    public func getTotalSpace(_ unit: ByteCountFormatter.Units, includeUnit isUnitActive: Bool = true) -> String {
+    public func getTotalSpace(_ unit: ByteCountFormatter.Units, includeUnitPostfix isUnitActive: Bool = true) -> String {
         return format(bytes: totalSpaceInBytes, to: unit, includeUnit: isUnitActive)
     }
     
-    public func getFreeSpace(_ unit: ByteCountFormatter.Units, includeUnit isUnitActive: Bool = true) -> String {
+    public func getFreeSpace(_ unit: ByteCountFormatter.Units, includeUnitPostfix isUnitActive: Bool = true) -> String {
         return format(bytes: freeSpaceInBytes, to: unit, includeUnit: isUnitActive)
     }
     
-    public func getUsedSpace(_ unit: ByteCountFormatter.Units, includeUnit isUnitActive: Bool = true) -> String {
+    public func getUsedSpace(_ unit: ByteCountFormatter.Units, includeUnitPostfix isUnitActive: Bool = true) -> String {
         return format(bytes: usedSpaceInBytes, to: unit, includeUnit: isUnitActive)
     }
     
