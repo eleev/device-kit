@@ -7,7 +7,7 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.0.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 16/November/2018.**
+**Last Update: 18/November/2018.**
 
 ![](logo-device_kit.png)
 
@@ -28,12 +28,12 @@ You can always use `copy-paste` the sources method 😄. Or you can compile the 
 - Device Type information 
   - Easily get a device's `identifier`
   - Determine if an app running on a `simulator` or on an actual device
-  - Includes information about each `iOS` device
-- Device Storate status such as:
+  - Includes information about an each `iOS` device
+- Device Storage status such as:
   - `Total` space
   - `Free` space 
   - `Used` space
-  - You can format the data using various `units` (everything that is supported by `ByteCountFormatter.Units`)
+  - You can format the data using various `units` (by using `ByteCountFormatter.Units`)
 
 # ✈️ Usage
 
@@ -48,7 +48,7 @@ Determing how much storage has left:
 
 ```swift
 UIDevice.current.storageStatus.getFreeSpace(.useMB)
-// Will print something like that:
+// Will print something like this:
 // 139,197.3 MB
 
 UIDevice.current.storageStatus.getFreeSpace(.useGB)
@@ -63,7 +63,6 @@ UIDevice.current.storageStatus.getFreeSpace(.useGB, includeUnitPostfix: false)
 - [ ] Lightweight `Network` reachability (with `NotificationCenter` support or more safer approach in observing changes)
 - [ ] Interface `orientation` observer 
 - [ ] Device `orientation` observer
-
 
 # 🙋‍♀️🙋‍♂️Contributing 
 - There is just one main rule for contributors - **please include your extensions in separete files**. It's important since such extension can be more easily referenced and reused.
