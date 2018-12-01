@@ -4,10 +4,10 @@
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![Coverage](https://img.shields.io/badge/coverage-34.00%25-orange.svg)]()
 [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]()
-[![CocoaPod](https://img.shields.io/badge/pod-1.0.0-lightblue.svg)]()
+[![CocoaPod](https://img.shields.io/badge/pod-1.1.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 18/November/2018.**
+**Last Update: 01/December/2018.**
 
 ![](logo-device_kit.png)
 
@@ -19,7 +19,7 @@
 `device-kit` is availabe via `CocoaPods`
 
 ```
-pod 'device-kit', '~> 1.0.1' 
+pod 'device-kit', '~> 1.1.0' 
 ```
 ## Manual
 You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
@@ -34,6 +34,12 @@ You can always use `copy-paste` the sources method 😄. Or you can compile the 
   - `Free` space 
   - `Used` space
   - You can format the data using various `units` (by using `ByteCountFormatter.Units`)
+- Device Orientation information
+  - Check whether the device is in `.portrait` or `.landscape` orientation without the need to make boilerplate `UIDevice.current.orientation` calls & `if/else` checks
+  - You can use `isPortrait` property if you'd like
+- Device's Internet Connection status
+  - Super easily check whether your device is connected to the internet
+  - You can get the reachability status as well
 
 # ✈️ Usage
 
@@ -59,10 +65,40 @@ UIDevice.current.storageStatus.getFreeSpace(.useGB, includeUnitPostfix: false)
 // If you don't want to get GB, MB postfixes then specify an optional parameter for `includeUnitPostfix`:
 // 139.16
 ```
+
+Checking the device's orientation:
+
+```swift
+let orienation = UIDevice.current.deviceOrientation
+
+switch orientation {
+  case .portrait:
+    showDrawerView()
+  case .landscape:
+    hideDrawerView()
+}
+```
+
+Getting the internet connection status:
+
+```swift
+let internet = UIDevice.current.internetConnection
+
+guard internet.connection == .open else { 
+  throw NetworkError.isNotAvailabe("Missing internet connection")
+}
+
+sendRequest()
+```
+
+
 # 📝 ToDo
-- [ ] Lightweight `Network` reachability (with `NotificationCenter` support or more safer approach in observing changes)
-- [ ] Interface `orientation` observer 
-- [ ] Device `orientation` observer
+- [x] Lightweight `Network` reachability (with `NotificationCenter` support or more safer approach in observing changes)
+  - [ ] `NotificationCenter` observer support
+- [x] Device `orientation` 
+  - [ ] `NotificationCenter` observer support
+- [ ] Interface `orientation`
+  - [ ] `NotificationCenter` observer support
 
 # 🙋‍♀️🙋‍♂️Contributing 
 - There is just one main rule for contributors - **please include your extensions in separete files**. It's important since such extension can be more easily referenced and reused.
