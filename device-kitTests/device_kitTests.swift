@@ -54,6 +54,17 @@ class device_kitTests: XCTestCase {
         XCTAssert(kb == "361,913,528 KB")
     }
     
+    func testOrientation() {
+        let orienation = UIDevice.current.deviceOrientation
+        XCTAssert(orienation == .portrait)
+    }
+    
+    func testInternetConnection() {
+        let internet = UIDevice.current.internetConnection
+        XCTAssert(internet.connection == .open)
+        XCTAssert(internet.status == .reachable)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
