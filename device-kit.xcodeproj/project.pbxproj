@@ -15,6 +15,8 @@
 		A96E1180219EB51000F36250 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E117F219EB51000F36250 /* DeviceType.swift */; };
 		A96E1182219EB53E00F36250 /* UIDevice+Extended.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E1181219EB53E00F36250 /* UIDevice+Extended.swift */; };
 		A96E1184219EB9D900F36250 /* StorageStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E1183219EB9D900F36250 /* StorageStatus.swift */; };
+		A99219D921B274DC007986AE /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99219D821B274DC007986AE /* Orientation.swift */; };
+		A99219DB21B2751F007986AE /* InternetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99219DA21B2751F007986AE /* InternetConnection.swift */; };
 		D1513D065387914B85D76E1F /* Pods_device_kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5203FA4AB86351EFF4FC4D /* Pods_device_kit.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		A96E117F219EB51000F36250 /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
 		A96E1181219EB53E00F36250 /* UIDevice+Extended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extended.swift"; sourceTree = "<group>"; };
 		A96E1183219EB9D900F36250 /* StorageStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageStatus.swift; sourceTree = "<group>"; };
+		A99219D821B274DC007986AE /* Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
+		A99219DA21B2751F007986AE /* InternetConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnection.swift; sourceTree = "<group>"; };
 		AA5203FA4AB86351EFF4FC4D /* Pods_device_kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_device_kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF502C1BAEFBD264B269A6B6 /* Pods-device-kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-device-kit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-device-kit/Pods-device-kit.debug.xcconfig"; sourceTree = "<group>"; };
 		D2033F4AC96B446C4D3D2D32 /* Pods_device_kitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_device_kitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +109,8 @@
 				A96E1167219EB47A00F36250 /* Info.plist */,
 				A96E117F219EB51000F36250 /* DeviceType.swift */,
 				A96E1183219EB9D900F36250 /* StorageStatus.swift */,
+				A99219D821B274DC007986AE /* Orientation.swift */,
+				A99219DA21B2751F007986AE /* InternetConnection.swift */,
 				A96E1181219EB53E00F36250 /* UIDevice+Extended.swift */,
 			);
 			path = "device-kit";
@@ -289,9 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99219D921B274DC007986AE /* Orientation.swift in Sources */,
 				A96E1184219EB9D900F36250 /* StorageStatus.swift in Sources */,
 				A96E1180219EB51000F36250 /* DeviceType.swift in Sources */,
 				A96E1182219EB53E00F36250 /* UIDevice+Extended.swift in Sources */,
+				A99219DB21B2751F007986AE /* InternetConnection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

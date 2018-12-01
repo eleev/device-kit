@@ -24,4 +24,23 @@ public extension UIDevice {
         return StorageStatus()
     }
     
+    /// Allows to get the current device orientation (.landscape or .portrait)
+    public var deviceOrientation: Orientation {
+        return Orientation.get()
+    }
+    
+    
+    /// Checks the Internet connection & status. May return following results:
+    ///
+    /// - .open - when the internet connection is available
+    /// - .closed - when the internet connection is not available
+    ///
+    /// Also there is Status enum type that returns reachability status such as:
+    ///
+    /// - .reachable - when the internet connection is reachable
+    /// - .unreachable - when the internet connection is not reachable
+    public var internetConnection: (connection: InternetConnection, status: InternetConnection.Status) {
+        return InternetConnection.check()
+    }
+    
 }
