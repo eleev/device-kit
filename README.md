@@ -25,19 +25,19 @@ pod 'device-kit', '~> 1.1.0'
 You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
 
 # 📚 Features
-- Device Type information 
+- **Device Type information** 
   - Easily get a device's `identifier`
   - Determine if an app running on a `simulator` or on an actual device
   - Includes information about an each `iOS` device
-- Device Storage status such as:
+- **Device Storage status such as:**
   - `Total` space
   - `Free` space 
   - `Used` space
   - You can format the data using various `units` (by using `ByteCountFormatter.Units`)
-- Device Orientation information
+- **Device Orientation information**
   - Check whether the device is in `.portrait` or `.landscape` orientation without the need to make boilerplate `UIDevice.current.orientation` calls & `if/else` checks
   - You can use `isPortrait` property if you'd like
-- Device's Internet Connection status
+- **Device's Internet Connection status**
   - Super easily check whether your device is connected to the internet
   - You can get the reachability status as well
 
