@@ -7,9 +7,11 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.1.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 03/December/2018.**
+**Last Update: 19/December/2018.**
 
 ![](logo-device_kit.png)
+
+### If you like the project, please give it a star ⭐ It will show the creator your appreciation and help others to discover the repo.
 
 # ✍️ About
 📱 Framework that allows to get extended information about an `iOS` device.
