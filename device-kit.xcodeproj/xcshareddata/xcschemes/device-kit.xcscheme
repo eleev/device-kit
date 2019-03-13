@@ -39,7 +39,26 @@
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A96E116B219EB47A00F36250"
+               BuildableName = "device-kitTests.xctest"
+               BlueprintName = "device-kitTests"
+               ReferencedContainer = "container:device-kit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A96E1162219EB47A00F36250"
+            BuildableName = "device_kit.framework"
+            BlueprintName = "device-kit"
+            ReferencedContainer = "container:device-kit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
