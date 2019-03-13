@@ -2,12 +2,12 @@
 
 [![Platforms](https://img.shields.io/badge/platform-iOS-yellowgreen.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
-[![Coverage](https://img.shields.io/badge/coverage-34.00%25-orange.svg)]()
-[![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]()
 [![CocoaPod](https://img.shields.io/badge/pod-1.1.0-lightblue.svg)]()
+[![Build Status](https://travis-ci.org/jVirus/device-kit.svg?branch=master)](https://travis-ci.org/jVirus/device-kit)
+[![codecov](https://codecov.io/gh/jVirus/device-kit/branch/master/graph/badge.svg)](https://codecov.io/gh/jVirus/device-kit)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 19/December/2018.**
+**Last Update: 13/March/2019.**
 
 ![](logo-device_kit.png)
 
