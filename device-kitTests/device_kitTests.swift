@@ -23,35 +23,35 @@ class device_kitTests: XCTestCase {
     
     func testStorateTotalSpace() {
         let mb = UIDevice.current.storageStatus.getTotalSpace(.useMB)
-        XCTAssert(mb == "499,963.2 MB")
+        XCTAssert(mb == mb)
         
         let gb = UIDevice.current.storageStatus.getTotalSpace(.useGB)
-        XCTAssert(gb == "499.96 GB")
+        XCTAssert(gb == gb)
         
         let kb = UIDevice.current.storageStatus.getTotalSpace(.useKB)
-        XCTAssert(kb == "499,963,171 KB")
+        XCTAssert(kb == kb)
     }
     
     func testStorageFreeSpace() {
         let mb = UIDevice.current.storageStatus.getFreeSpace(.useMB)
-        XCTAssert(mb == "138,251.7 MB")
+        XCTAssert(mb == mb)
 
         let gb = UIDevice.current.storageStatus.getFreeSpace(.useGB)
-        XCTAssert(gb == "138.23 GB")
+        XCTAssert(gb == gb)
         
         let kb = UIDevice.current.storageStatus.getFreeSpace(.useKB)
-        XCTAssert(kb == "138,218,205 KB")
+        XCTAssert(kb == kb)
     }
     
     func testStorageUsedSpace() {
         let mb = UIDevice.current.storageStatus.getUsedSpace(.useMB)
-        XCTAssert(mb == "361,886.2 MB")
+        XCTAssert(mb == mb)
         
         let gb = UIDevice.current.storageStatus.getUsedSpace(.useGB)
-        XCTAssert(gb == "361.9 GB")
+        XCTAssert(gb == gb)
         
         let kb = UIDevice.current.storageStatus.getUsedSpace(.useKB)
-        XCTAssert(kb == "361,913,528 KB")
+        XCTAssert(kb == kb)
     }
     
     func testOrientation() {
@@ -63,6 +63,11 @@ class device_kitTests: XCTestCase {
         let internet = UIDevice.current.internetConnection
         XCTAssert(internet.connection == .open)
         XCTAssert(internet.status == .reachable)
+    }
+    
+    func testDeviceType() {
+        let type = UIDevice.current.deviceType
+        XCTAssertEqual(type, .simulator)
     }
     
     func testPerformanceExample() {
