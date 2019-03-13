@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10B66457FAC27283E627B506 /* Pods_device_kitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2033F4AC96B446C4D3D2D32 /* Pods_device_kitTests.framework */; };
 		A96E116D219EB47A00F36250 /* device_kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A96E1163219EB47A00F36250 /* device_kit.framework */; };
 		A96E1172219EB47A00F36250 /* device_kitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E1171219EB47A00F36250 /* device_kitTests.swift */; };
 		A96E1174219EB47A00F36250 /* device_kit.h in Headers */ = {isa = PBXBuildFile; fileRef = A96E1166219EB47A00F36250 /* device_kit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -15,6 +14,7 @@
 		A96E1180219EB51000F36250 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E117F219EB51000F36250 /* DeviceType.swift */; };
 		A96E1182219EB53E00F36250 /* UIDevice+Extended.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E1181219EB53E00F36250 /* UIDevice+Extended.swift */; };
 		A96E1184219EB9D900F36250 /* StorageStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E1183219EB9D900F36250 /* StorageStatus.swift */; };
+		A98B1BE52239496300F8F096 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = A98B1BE42239496200F8F096 /* .travis.yml */; };
 		A99219D921B274DC007986AE /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99219D821B274DC007986AE /* Orientation.swift */; };
 		A99219DB21B2751F007986AE /* InternetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99219DA21B2751F007986AE /* InternetConnection.swift */; };
 /* End PBXBuildFile section */
@@ -40,10 +40,9 @@
 		A96E117F219EB51000F36250 /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
 		A96E1181219EB53E00F36250 /* UIDevice+Extended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extended.swift"; sourceTree = "<group>"; };
 		A96E1183219EB9D900F36250 /* StorageStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageStatus.swift; sourceTree = "<group>"; };
+		A98B1BE42239496200F8F096 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		A99219D821B274DC007986AE /* Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
 		A99219DA21B2751F007986AE /* InternetConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnection.swift; sourceTree = "<group>"; };
-		AA5203FA4AB86351EFF4FC4D /* Pods_device_kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_device_kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2033F4AC96B446C4D3D2D32 /* Pods_device_kitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_device_kitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,30 +58,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A96E116D219EB47A00F36250 /* device_kit.framework in Frameworks */,
-				10B66457FAC27283E627B506 /* Pods_device_kitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		43417643693A7577805C3E89 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AA5203FA4AB86351EFF4FC4D /* Pods_device_kit.framework */,
-				D2033F4AC96B446C4D3D2D32 /* Pods_device_kitTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		A96E1159219EB47A00F36250 = {
 			isa = PBXGroup;
 			children = (
+				A98B1BE42239496200F8F096 /* .travis.yml */,
 				A96E117D219EB4DF00F36250 /* .gitignore */,
 				A96E1165219EB47A00F36250 /* device-kit */,
 				A96E1170219EB47A00F36250 /* device-kitTests */,
 				A96E1164219EB47A00F36250 /* Products */,
-				43417643693A7577805C3E89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A98B1BE52239496300F8F096 /* .travis.yml in Resources */,
 				A96E117E219EB4DF00F36250 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
