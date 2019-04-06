@@ -1,13 +1,13 @@
 # device-kit [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 [![Platforms](https://img.shields.io/badge/platform-iOS-yellowgreen.svg)]()
-[![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
-[![CocoaPod](https://img.shields.io/badge/pod-1.1.0-lightblue.svg)]()
+[![Language](https://img.shields.io/badge/language-Swift_5.0-orange.svg)]()
+[![CocoaPod](https://img.shields.io/badge/pod-1.1.1-lightblue.svg)]()
 [![Build Status](https://travis-ci.org/jVirus/device-kit.svg?branch=master)](https://travis-ci.org/jVirus/device-kit)
 [![codecov](https://codecov.io/gh/jVirus/device-kit/branch/master/graph/badge.svg)](https://codecov.io/gh/jVirus/device-kit)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 13/March/2019.**
+**Last Update: 06/April/2019.**
 
 ![](logo-device_kit.png)
 
@@ -21,7 +21,7 @@
 `device-kit` is availabe via `CocoaPods`
 
 ```
-pod 'device-kit', '~> 1.1.0' 
+pod 'device-kit', '~> 1.1.1' 
 ```
 ## Manual
 You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
