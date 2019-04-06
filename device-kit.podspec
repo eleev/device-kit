@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "device-kit"
-s.version      = "1.1.0"
+s.version      = "1.1.1"
 s.summary      = "📱 Lightweight framework that allows to get extended information about an iOS device."
 
 # This description is used to generate tags and improve search results.
