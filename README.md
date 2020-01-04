@@ -1,6 +1,6 @@
 # device-kit [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-[![Build Status](https://travis-ci.org/jVirus/device-kit.svg?branch=master)](https://travis-ci.org/jVirus/device-kit)
+[![Build](https://github.com/jvirus/device-kit/workflows/Build/badge.svg)]()
 [![Platforms](https://img.shields.io/badge/Platform-iOS-yellowgreen.svg)]()
 [![Language](https://img.shields.io/badge/Language-Swift_5.1-orange.svg)]()
 [![Codecov](https://codecov.io/gh/jVirus/device-kit/branch/master/graph/badge.svg)](https://codecov.io/gh/jVirus/device-kit)
@@ -14,16 +14,6 @@
 
 # ✍️ About
 📱 Framework that allows to get extended information about an `iOS` device.
-
-# 🏗 Installation
-## CocoaPods
-`device-kit` is availabe via `CocoaPods`
-
-```
-pod 'device-kit', '~> 1.1.1' 
-```
-## Manual
-You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
 
 # 📚 Features
 - **Device Type information** 
@@ -91,6 +81,30 @@ guard internet.connection == .open else {
 
 sendRequest()
 ```
+
+# 🏗 Installation
+
+## Swift Package Manager
+
+### Xcode 11+
+
+1. Open `MenuBar` → `File` → `Swift Packages` → `Add Package Dependency...`
+2. Paste the package repository url `https://github.com/jVirus/device-kit` and hit `Next`.
+3. Select the installment rules.
+
+After specifying which version do you want to install, the package will be downloaded and attached to your project. 
+
+### Package.swift
+If you already have a `Package.swift` or you are building your own package simply add a new dependency:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/jVirus/device-kit", from: "1.0.0")
+]
+```
+
+## Manual 
+You can always use copy-paste the sources method 😄. Or you can compile the framework and include it with your project.
 
 
 # 📝 ToDo
